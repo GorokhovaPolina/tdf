@@ -1,0 +1,49 @@
+#ifndef ORTO_HPP
+#define ORTO_HPP
+
+#include "iosfwd"
+#include "figures.hpp"
+#include "orto/orto.hpp"
+#include "geo2d/geo2d.hpp"
+#include "geo2d.cpp"
+
+Class geo2d::Quad{
+    public:
+    using SizeType = int;
+    int H(0);
+    int W(0);
+ public:
+    void SetW (const std::istream& istrm) {
+        orto::orto(const int W)::SetW{
+            if (W < 0) { throw std::invalid_argument("invalid weight"); }
+        }
+    }
+    void SetH(const std::istream& istrm) {
+        orto::orto(const int H)::SetH{
+            if (H < 0) { throw std::invalid_argument("invalid height"); }
+        }
+    }
+
+    void GetW(const std::ostream& ostrm) {
+        orto::orto(const int W)::GetW{
+            std::ostream()
+        }
+    }
+
+    void GetH(const std::ostream& ostrm){
+        orto::orto(const int H)::GetH{
+            std::ostream()
+        }
+    }
+}
+
+Class Quad::Rect{
+
+}
+
+Class Quad::Square{
+
+
+}
+
+#endif

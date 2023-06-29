@@ -1,0 +1,15 @@
+﻿namespace geo2d::orto {
+
+	class Quad {
+
+	};
+
+	class Rect : public Quad {
+
+	};
+
+	class Square : public Quad {
+
+	};
+
+}
